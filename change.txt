@@ -1,0 +1,31 @@
+修改了 ： /etc/bluetooth/main.conf
+去掉了 [policy] 和autoenable的注释
+将false 改为 true
+将 handlelidsuitchdocked = ignore 改为了 true
+
+
+bluetooth is not runing save application：
+rfkill unblock bluetooth    - to start bluetooth
+rfkill block bluetooth    -to stop bluetooth
+
+
+修改开机自启动项
+gnome-session-properties
+
+
+混合挂起：
+sudo pm-suspend-hybrid
+
+测网速工具
+
+sudo add-apt-repository ppa:fossfreedom/indicator-sysmonitor
+sudo apt-get update
+sudo apt-get install indicator-sysmonitor
+//启动
+indicator-sysmonitor &
+
+局域网传输工具测试：
+portal 传输快，可以达到上传2M/s , 60MB的文件10s左右传输完成。缺点：需要互联网的帮助。
+爱莫助手 传输快，60MB/s文件15s左右传输完成，但是优点可以用手机自建局域网后传输，不需要外接互联网即可完成。
+
+
