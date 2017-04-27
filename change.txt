@@ -1,4 +1,4 @@
-修改了 ： /etc/bluetooth/main.conf
+修了 ： /etc/bluetooth/main.conf
 去掉了 [policy] 和autoenable的注释
 将false 改为 true
 将 handlelidsuitchdocked = ignore 改为了 true
@@ -28,4 +28,15 @@ indicator-sysmonitor &
 portal 传输快，可以达到上传2M/s , 60MB的文件10s左右传输完成。缺点：需要互联网的帮助。
 爱莫助手 传输快，60MB/s文件15s左右传输完成，但是优点可以用手机自建局域网后传输，不需要外接互联网即可完成。
 
+unar 可以解决压缩包解压乱码问题
+unar name.zip
 
+转码，可以转换编码
+convmv -f GBK -t utf8  --notest -r
+
+编译带数学函数的c语言程序时 需要加上 -lm
+gcc project -lm
+gcc project -lm -o (project)
+
+网盘搜索引擎
+https://www.panc.cc/
